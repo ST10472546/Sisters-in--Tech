@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div class="floating-heart" style="top: 10%; left: 5%;">💕</div>
+    <div class="floating-heart" style="top: 20%; right: 10%;">💖</div>
+    <div class="floating-heart" style="bottom: 30%; left: 15%;">⚙️</div>
+    <div class="floating-heart" style="bottom: 20%; right: 20%;">🌸</div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <span class="logo-text">💕TECH-SISTERS🤖</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Enquiry Section -->
+    <section id="enquiry" class="section">
+        <div class="container">
+            <h1>Make an Enquiry</h1>
+            <div class="success-message" id="enquirySuccess">
+                Thank you for your enquiry! Our team will get back to you within 24 hours. 💖
+            </div>
+            <div class="form-container">
+                <form id="enquiryForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryEmail">Email Address *</label>
+                        <input type="email" id="enquiryEmail" name="email" required>
+                        </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service...</option>
+                            <option value="mobiloitte">Mobiloitte</option>
+                            <option value="ai-development">AI Development</option>
+                            <option value="iot-development">IoT Development</option>
+                            <option value="ux-ui-design">UX/UI Design</option>
+                            <option value="custom-software">Custom Software Development</option>
+                        </select>
+                        </div>
+                    <div class="form-group">
+                        <label for="enquiryBudget">Budget Range *</label>
+                        <select id="enquiryBudget" name="budget" required>
+                            <option value="">Select budget range...</option>
+                            <option value="under-500">Under R500</option>
+                            <option value="500-700">R500 - R700</option>
+                            <option value="700-800">R700 - R800</option>
+                            <option value="800-1000">R800 - R1000</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label for="message">Tell us about your dream robot</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Describe your vision of your perfect pink robot service"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Enquiry 🚀</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy;2025 TECH-SISTERS. All rights reserved</p>
+    </footer>
+     <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Form submission handling validation
+        const enquiryForm = document.getElementById('enquiryForm');
+        const enquirySuccess = document.getElementById('enquirySuccess');
+
+        enquiryForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('enquiryEmail').value.trim();
+            const phone = document.getElementById('enquiryPhone').value.trim();
+            const service = document.getElementById('service').value;
+            const budget = document.getElementById('enquiryBudget').value;
+            
+            if (!name || !email || !phone || !service || !budget) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Show success message
+            enquirySuccess.style.display = 'block';
+            enquiryForm.reset();
+            
+            // Scroll to success message
+            enquirySuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                enquirySuccess.style.display = 'none';
+            }, 5000);
+        });
+
+        // Floating hearts animation delay
+        document.querySelectorAll('.floating-heart').forEach((heart, index) => {
+            heart.style.animationDelay = `${index * 2}s`;
+        });
+    </script>
+</body>
+</html>
+
+
+

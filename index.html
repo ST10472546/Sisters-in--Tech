@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>TECH-SISTERS | Empowering Women in Technology & Robotics</title>
+    <meta name="description" content="TECH-SISTERS empowers women in technology through robotics training, coding bootcamps, mentorship programs, and a supportive sisterhood network. Join our mission to advance women in STEM fields.">
+    <meta name="keywords" content="women in tech, robotics for women, coding bootcamp, female engineers, tech mentorship, STEM education, women in STEM, coding for women, AI training, tech sisterhood">
+    <meta name="author" content="TECH-SISTERS">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="TECH-SISTERS | Empowering Women in Technology & Robotics">
+    <meta property="og:description" content="Join TECH-SISTERS: A community empowering women in technology through robotics, coding bootcamps, and mentorship programs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tech-sisters.example.com">
+    <meta property="og:image" content="https://placehold.co/1200x630/ff6b9d/ffffff?text=TECH-SISTERS">
+    <meta property="og:site_name" content="TECH-SISTERS">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TECH-SISTERS | Empowering Women in Technology & Robotics">
+    <meta name="twitter:description" content="Join TECH-SISTERS: A community empowering women in technology through robotics, coding bootcamps, and mentorship programs.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/ff6b9d/ffffff?text=TECH-SISTERS">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div class="floating-heart" style="top: 10%; left: 5%;">💕</div>
+    <div class="floating-heart" style="top: 20%; right: 10%;">💖</div>
+    <div class="floating-heart" style="bottom: 30%; left: 15%;">⚙️</div>
+    <div class="floating-heart" style="bottom: 20%; right: 20%;">🌸</div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <span class="logo-text">💕TECH-SISTERS🤖</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../pages/about.html">About </a></li>
+                <li><a href="../pages/.html">Services</a></li>
+                <li><a href="../pages/enquiry.html">Enquiry</a></li>
+                <li><a href="../pages/Gallery.html">Gallery</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                
+            </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search..." id="searchInput">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+<!-- Real-Time Date & Time Display -->
+<section class="datetime-container">
+<div class="datetime-display">
+<div class="datetime-icon">🕐</div>
+<div class="current-time" id="currentTime">00:00:00</div>
+<div class="current-date" id="currentDate">Loading...</div>
+<div class="timezone" id="timezone">Loading timezone...</div>
+</div>
+</section>
+    
+    <!-- Robot Assistant -->
+    <div class="robot-assistant">🤖</div>
+    <div class="robot-message" id="robotMessage">
+        <p>Hi there! I'm Rosie, your TECH-SISTERS assistant! Need help navigating or have questions? Just click on me!</p>
+    </div>
+
+    <!-- Chat Button -->
+<button class="chat-button" id="chatButton">🤖</button>
+
+<!-- Chat Window -->
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-header-info">
+      <div class="chat-avatar">🤖</div>
+      <div class="chat-title">
+        <h3>TECH-SISTERS Assistant</h3>
+        <div class="chat-status">● Online</div>
+      </div>
+    </div>
+    <button class="chat-close" id="chatClose">×</button>
+  </div>
+  
+  <div class="chat-messages" id="chatMessages">
+    <div class="message bot">
+      <div class="message-avatar">🤖</div>
+      <div class="message-content">
+        Hi! 👋 I'm your TECH-SISTERS assistant! I can help you navigate our website and answer questions about our programs. How can I help you today?
+        <div class="quick-actions">
+          <button class="quick-action-btn" data-action="about">About Us</button>
+          <button class="quick-action-btn" data-action="services">Our Services</button>
+          <button class="quick-action-btn" data-action="programs">Programs</button>
+          <button class="quick-action-btn" data-action="contact">Contact Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button id="sendButton">➤</button>
+  </div>
+</div>
+    <!-- Main Content -->
+     <div id="datestamp"></div>
+    <div class="main-concept">
+        <div class="hero" id="home">
+            <div class="hero-content">
+                <h1>🌸TECH-SISTERS💕</h1>
+                <p>Empowering Women in Technology Through Innovation And Sisterhood</p>
+                <p>Where Robotics Meets Female Excellence - Join the revolution of women shaping the future through technology!💕</p>
+                <a href="../pages/about.html" class="cta-button">Discover Our Mission</a>
+                <a href="../pages/services.html" class="cta-button">Explore Our Services</a>
+                <a href="../pages/contact.html" class="cta-button">Contact</a>
+                <a href="../pages/Gallery.html" class="cta-button">Gallery</a>
+            </div>
+        </div>
+
+        <div class="robot-container">
+            <div class="welcoming-robot">
+                <div class="welcome-bubble">🤖Welcome Sisters! Let The Journey Begin!💕</div>
+                <div class="robot-head">
+                    <div class="antena left"></div>
+                    <div class="antena right"></div>
+                    <div class="robot-eye">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                </div>
+                <div class="robot-body">
+                    <div class="heart-display">❤️</div>
+                    <div class="robot-arm left">
+                        <div class="robot-hand"></div>
+                    </div>
+                    <div class="robot-arm right">
+                        <div class="robot-hand"></div>
+                    </div>
+                </div>
+                <div class="robot-leg left">
+                    <div class="robot-foot"></div>
+                </div>
+                <div class="robot-leg right">
+                    <div class="robot-foot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>Tech Training</h3>
+                <p>Comprehensive technology training and hands-on workshops designed specifically for women in robotics and AI development.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sisterhood Network</h3>
+                <p>Connect with like-minded tech sisters, mentors and industry leaders in our supportive global community.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Bootcamps ⚙️</h3>
+                <p>SheCodes: A coding bootcamp for women to build skills and confidence.</p>
+                <p>Code First Girls: Provides a variety of coding courses for women.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Mentorship Programs</h3>
+                <p>Our Mentorship Program provides guidance, support and knowledge transfer for career and personal development.</p>
+                <p>We aim to foster growth through knowledge sharing, skill development, and network expansion.</p>
+            </div>
+        </div>
+
+        <!-- Tabs Section -->
+        <div class="interactive-section" id="about">
+            <h2 class="section-title">Our Programs</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tab1">Robotics</button>
+                <button class="tab-btn" data-tab="tab2">Web Development</button>
+                <button class="tab-btn" data-tab="tab3">AI & Machine Learning</button>
+                <button class="tab-btn" data-tab="tab4">Cybersecurity</button>
+            </div>
+            <div class="tab-content active" id="tab1">
+                <h3>Robotics Program</h3>
+                <p>Our robotics program teaches women how to design, build, and program robots. Students learn about sensors, actuators, microcontrollers, and computer vision while working on real-world projects.</p>
+                <p>Graduates have gone on to work at companies like Boston Dynamics, Tesla, and NASA.</p>
+            </div>
+            <div class="tab-content" id="tab2">
+                <h3>Web Development Bootcamp</h3>
+                <p>Learn full-stack web development with HTML, CSS, JavaScript, React, and Node.js. Our immersive program includes portfolio projects and job placement assistance.</p>
+                <p>95% of our graduates secure developer roles within 6 months of graduation.</p>
+            </div>
+            <div class="tab-content" id="tab3">
+                <h3>AI & Machine Learning</h3>
+                <p>Master the fundamentals of artificial intelligence and machine learning. Learn Python, TensorFlow, data analysis, and neural networks through hands-on projects.</p>
+                <p>Our AI program partners with leading research institutions and tech companies.</p>
+            </div>
+            <div class="tab-content" id="tab4">
+                <h3>Cybersecurity Training</h3>
+                <p>Become a cybersecurity expert with our comprehensive training program. Learn ethical hacking, network security, cryptography, and incident response.</p>
+                <p>Prepare for industry certifications like CISSP, CEH, and CompTIA Security+.</p>
+            </div>
+        </div>
+
+        <!-- Accordion Section -->
+        <div class="interactive-section" id="services">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Who can join TECH-SISTERS?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>TECH-SISTERS is open to all women and gender minorities who are interested in technology, regardless of their current skill level or background. We welcome beginners, students, professionals, and anyone looking to transition into tech.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Are your programs free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We offer both free and paid programs. Our introductory workshops and community events are completely free. Our intensive bootcamps and certification programs have tuition fees, but we provide scholarships and payment plans to ensure accessibility.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Do I need prior experience?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>No prior experience is required for most of our programs! We offer beginner-friendly courses that start from the basics. For our advanced programs, we provide prerequisite materials to help you get up to speed.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What support do you provide after graduation?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We provide lifelong career support including job placement assistance, interview preparation, resume reviews, networking events, and access to our alumni network of 5,000+ tech professionals. Our graduates also get lifetime access to our learning platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+         
+        <div class="interactive-section" id="gallery">
+            <h2 class="section-title">Our Community in Action</h2>
+            <div class="gallery">
+                <div class="gallery-item" data-src="../assets/gallery-2.jpg">
+                    <img src="../assets/gallery-2.jpg" alt="Robotics Workshop">
+                    <div class="gallery-overlay">Robotics Workshop</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/gallery-1.jpg">
+                    <img src="../assets/gallery-1.jpg" alt="Hackathon Event">
+                    <div class="gallery-overlay">Hackathon Event</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/mentorship.jpg">
+                    <img src="../assets/mentorship.jpg" alt="Mentorship Session">
+                    <div class="gallery-overlay">Mentorship Session</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/DOCTORS Gradautes.jpg">
+                    <img src="../assets/DOCTORS Gradautes.jpg" alt="Graduation Ceremony">
+                    <div class="gallery-overlay">Graduation Ceremony</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/gallery-3.jpg">
+                    <img src="../assets/gallery-3.jpg" alt="Tech Conference">
+                    <div class="gallery-overlay">Tech Conference</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/Community meetup.webp">
+                    <img src="../assets/Community meetup.webp" alt="Community Meetup">
+                    <div class="gallery-overlay">Community Meetup</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Real-time Updates -->
+        <div class="interactive-section">
+            <h2 class="section-title">Latest Updates</h2>
+            <div class="real-time-updates" id="realTimeUpdates">
+                <div class="update-item">Welcome to our newest member: Sarah Johnson from New York! 🎉</div>
+                <div class="update-item">Robotics Workshop this Saturday at 2 PM - Register now! 🤖</div>
+                <div class="update-item">Congratulations to Maria Chen for landing her dream job at Google! 🚀</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="closeLightbox">&times;</span>
+            <img src="" alt="Gallery Image" class="lightbox-img" id="lightboxImg">
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h2>Contact TECH-SISTERS</h2>
+            <form class="modal-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy;2025 TECH-SISTERS. All rights reserved</p>
+    </footer>
+
+    <script>
+// Real-Time Clock & Date Update
+function updateDateTime() {
+  const now = new Date();
+  
+  // Format time (24-hour format with seconds)
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  
+  // Format date (Full day, month, date, year)
+  const options = { 
+    weekday: 'long', 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+  };
+  const dateString = now.toLocaleDateString('en-US', options);
+  
+  // Get timezone
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  
+  // Update DOM
+  document.getElementById('currentTime').textContent = timeString;
+  document.getElementById('currentDate').textContent = dateString;
+  document.getElementById('timezone').textContent = `🌍 ${timezone}`;
+}
+
+// Update immediately and then every second
+updateDateTime();
+setInterval(updateDateTime, 1000);
+
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const searchContainer = document.querySelector('.search-container');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            searchContainer.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                searchContainer.classList.remove('active');
+            });
+        });
+
+        // Robot Assistant Toggle
+        const robotAssistant = document.querySelector('.robot-assistant');
+        const robotMessage = document.getElementById('robotMessage');
+
+        function toggleRobotMessage() {
+            robotMessage.classList.toggle('show');
+        }
+
+        robotAssistant.addEventListener('click', toggleRobotMessage);
+
+        // Close robot message when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!robotAssistant.contains(e.target) && !robotMessage.contains(e.target)) {
+                robotMessage.classList.remove('show');
+            }
+        });
+
+        const chatButton = document.getElementById('chatButton');
+const chatWindow = document.getElementById('chatWindow');
+const chatClose = document.getElementById('chatClose');
+const chatMessages = document.getElementById('chatMessages');
+const userInput = document.getElementById('userInput');
+const sendButton = document.getElementById('sendButton');
+
+// Toggle chat window
+chatButton.addEventListener('click', () => {
+  chatWindow.classList.add('active');
+  userInput.focus();
+});
+
+chatClose.addEventListener('click', () => {
+  chatWindow.classList.remove('active');
+});
+        // Knowledge base
+const knowledge = {
+  home: {
+    keywords: ['home', 'homepage', 'main', 'start'],
+    response: "I'll take you to our homepage! 🏠 Click here to go home.",
+    link: 'index.html'
+  },
+  about: {
+    keywords: ['about', 'who are you', 'mission', 'vision', 'story', 'what is tech-sisters'],
+    response: "Learn about TECH-SISTERS! 💕 We're a community dedicated to empowering women in technology and robotics. Visit our About page to learn more about our mission and vision.",
+    link: 'about.html'
+  },
+  services: {
+    keywords: ['services', 'what do you offer', 'programs', 'offerings', 'courses'],
+    response: "Check out our amazing services! 🚀 We offer robotics training, coding bootcamps, mentorship programs, and more. Let me take you to our Services page.",
+    link: 'services.html'
+  },
+  robotics: {
+    keywords: ['robotics', 'robot', 'automation', 'ai', 'artificial intelligence'],
+    response: "Our robotics program is amazing! 🤖 We teach everything from basics to advanced robotics and AI. Check our Services page for more details.",
+    link: 'services.html'
+  },
+  coding: {
+    keywords: ['coding', 'programming', 'code', 'bootcamp', 'learn to code'],
+    response: "Our coding bootcamps are perfect for beginners and advanced learners! 💻 We cover Python, JavaScript, web development, and more. Visit our Services page.",
+    link: 'services.html'
+  },
+  mentorship: {
+    keywords: ['mentorship', 'mentor', 'guidance', 'support', 'coaching'],
+    response: "Our mentorship program connects you with experienced women in tech! 👩‍💻 Get personalized guidance and career support. Learn more on our Services page.",
+    link: 'services.html'
+  },
+  enquiry: {
+    keywords: ['enquiry', 'inquiry', 'question', 'ask', 'register', 'sign up', 'join'],
+    response: "Ready to join us? 📝 Fill out our enquiry form and we'll get back to you soon! Let me take you there.",
+    link: 'enquiry.html'
+  },
+  gallery: {
+    keywords: ['gallery', 'photos', 'pictures', 'images', 'events', 'workshops'],
+    response: "Check out our amazing gallery! 📸 See photos from our workshops, events, and the incredible work our sisters are doing in tech.",
+    link: 'Gallery.html'
+  },
+  contact: {
+    keywords: ['contact', 'reach', 'email', 'phone', 'address', 'location', 'get in touch'],
+    response: "Want to get in touch? 📞 Visit our Contact page for our email, phone number, and office location. We'd love to hear from you!",
+    link: 'contact.html'
+  },
+  help: {
+    keywords: ['help', 'support', 'assistance', 'what can you do'],
+    response: "I can help you navigate the TECH-SISTERS website! I can tell you about our services, programs, how to contact us, and more. Just ask me anything like 'Tell me about your programs' or 'How do I join?'",
+    link: null
+  },
+  greetings: {
+    keywords: ['hi', 'hello', 'hey', 'greetings', 'good morning', 'good afternoon'],
+    response: "Hello! 👋 Welcome to TECH-SISTERS! How can I help you explore our programs today?",
+    link: null
+  }
+};
+
+        // Process user message
+function processMessage(message) {
+  const lowerMessage = message.toLowerCase();
+
+     // Check for matches
+  for (const [key, data] of Object.entries(knowledge)) {
+    if (data.keywords.some(keyword => lowerMessage.includes(keyword))) {
+      return data;
+    }
+  }
+  
+  // Default response
+  return {
+    response: "I'm here to help! I can tell you about our services, programs, how to contact us, or help you navigate the website. Try asking about 'services', 'programs', 'contact', or 'gallery'!",
+    link: null
+  };
+}
+
+        // Add message to chat
+function addMessage(text, isBot = true, link = null) {
+  const messageDiv = document.createElement('div');
+  messageDiv.className = `message ${isBot ? 'bot' : 'user'}`;
+  
+  const avatar = document.createElement('div');
+  avatar.className = 'message-avatar';
+  avatar.textContent = isBot ? '🤖' : '👩';
+  
+  const content = document.createElement('div');
+  content.className = 'message-content';
+  content.textContent = text;
+  
+  if (link && isBot) {
+    const linkButton = document.createElement('div');
+    linkButton.style.marginTop = '10px';
+    const btn = document.createElement('button');
+    btn.className = 'quick-action-btn';
+    btn.textContent = '➜ Go to page';
+    btn.onclick = () => {
+      window.parent.location.href = link;
+    };
+    linkButton.appendChild(btn);
+    content.appendChild(linkButton);
+  }
+  
+  if (isBot) {
+    messageDiv.appendChild(avatar);
+    messageDiv.appendChild(content);
+  } else {
+    messageDiv.appendChild(content);
+    messageDiv.appendChild(avatar);
+  }
+  
+  chatMessages.appendChild(messageDiv);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+        // Show typing indicator
+function showTyping() {
+  const typingDiv = document.createElement('div');
+  typingDiv.className = 'message bot';
+  typingDiv.id = 'typing';
+  
+  const avatar = document.createElement('div');
+  avatar.className = 'message-avatar';
+  avatar.textContent = '🤖';
+  
+  const indicator = document.createElement('div');
+  indicator.className = 'typing-indicator';
+  indicator.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+  
+  typingDiv.appendChild(avatar);
+  typingDiv.appendChild(indicator);
+  chatMessages.appendChild(typingDiv);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function removeTyping() {
+  const typing = document.getElementById('typing');
+  if (typing) typing.remove();
+}
+
+// Send message
+function sendMessage() {
+  const message = userInput.value.trim();
+  if (!message) return;
+  
+  // Add user message
+  addMessage(message, false);
+  userInput.value = '';
+  
+  // Show typing
+  showTyping();
+  
+  // Process and respond
+  setTimeout(() => {
+    removeTyping();
+    const response = processMessage(message);
+    addMessage(response.response, true, response.link);
+  }, 1000);
+}
+
+        // Event listeners
+sendButton.addEventListener('click', sendMessage);
+userInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') sendMessage();
+});
+
+// Quick action buttons
+chatMessages.addEventListener('click', (e) => {
+  if (e.target.classList.contains('quick-action-btn')) {
+    const action = e.target.getAttribute('data-action');
+    userInput.value = action;
+    sendMessage();
+  }
+});
+        // Floating hearts animation delay
+        document.querySelectorAll('.floating-heart').forEach((heart, index) => {
+            heart.style.animationDelay = `${index * 2}s`;
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Tabs functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons and content
+                tabBtns.forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Accordion functionality
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isActive = content.classList.contains('show');
+                
+                // Close all accordion items
+                document.querySelectorAll('.accordion-content').forEach(item => {
+                    item.classList.remove('show');
+                });
+                document.querySelectorAll('.accordion-header i').forEach(icon => {
+                    icon.classList.remove('rotate-180');
+                });
+                
+                // Open clicked item if it wasn't already open
+                if (!isActive) {
+                    content.classList.add('show');
+                    header.querySelector('i').classList.add('rotate-180');
+                }
+            });
+        });
+
+        // Gallery Lightbox
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeLightbox = document.getElementById('closeLightbox');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.getAttribute('data-src');
+                lightboxImg.src = imgSrc;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close lightbox when clicking outside image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Modal functionality
+        const openModalBtn = document.getElementById('openModalBtn');
+        const contactModal = document.getElementById('contactModal');
+        const closeModal = document.getElementById('closeModal');
+        const contactForm = document.getElementById('contactForm');
+
+        openModalBtn.addEventListener('click', () => {
+            contactModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeModal.addEventListener('click', () => {
+            contactModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        contactModal.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                contactModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+            contactModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+     // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+
+        searchBtn.addEventListener('click', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            if (searchTerm) {
+                alert(`Searching for: ${searchTerm}\nIn a real application, this would filter content across the site.`);
+            }
+        });
+
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchBtn.click();
+            }
+        });
+
+
+        // Real-time updates simulation
+        const realTimeUpdates = document.getElementById('realTimeUpdates');
+        const updateMessages = [
+            "New workshop announced: Advanced Python for Data Science!",
+            "Congratulations to our latest graduate: Emma Rodriguez!",
+            "Tech-Sisters community just reached 10,000 members! 🎉",
+            "Join our live Q&A session with industry leaders this Friday!",
+            "New scholarship opportunities available for underrepresented groups!",
+            "Our AI bootcamp graduates achieved 100% job placement rate!"
+        ];
+
+        function addRealTimeUpdate() {
+            const randomMessage = updateMessages[Math.floor(Math.random() * updateMessages.length)];
+            const updateItem = document.createElement('div');
+            updateItem.className = 'update-item';
+            updateItem.textContent = randomMessage;
+            updateItem.style.opacity = '0';
+            updateItem.style.transform = 'translateX(-20px)';
+            
+            realTimeUpdates.insertBefore(updateItem, realTimeUpdates.firstChild);
+            
+            // Animate in
+            setTimeout(() => {
+                updateItem.style.opacity = '1';
+                updateItem.style.transform = 'translateX(0)';
+            }, 10);
+            
+            // Remove oldest item if more than 5
+            if (realTimeUpdates.children.length > 5) {
+                const oldest = realTimeUpdates.lastElementChild;
+                oldest.style.opacity = '0';
+                oldest.style.transform = 'translateX(-20px)';
+                setTimeout(() => {
+                    realTimeUpdates.removeChild(oldest);
+                }, 300);
+            }
+        }
+
+        // Simulate real-time updates every 15 seconds
+        setInterval(addRealTimeUpdate, 15000);
+
+        // Initialize accordion chevron rotation
+        const chevrons = document.querySelectorAll('.accordion-header i');
+        chevrons.forEach(chevron => {
+            chevron.style.transition = 'transform 0.3s ease';
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

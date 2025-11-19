@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+        
+</head>
+<body>
+    <div id="floating-hearts"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <span class="logo-text">💕TECH-SISTERS🤖</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Registration Form -->
+        <div style="margin-top: 60px;">
+            <h2>Registration Form 📝</h2>
+            <div class="form-container">
+                <div class="success-message" id="registrationSuccess">
+                    Registration submitted! We'll contact you soon. 💖
+                </div>
+
+                <div class="form-group">
+                    <label for="regName">Your Name *</label>
+                    <input type="text" id="regName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regEmail">Your Email *</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <select id="city" required>
+                        <option value="">--Select--</option>
+                        <option value="Cape Town">Cape Town</option>
+                        <option value="Durban">Durban</option>
+                        <option value="Johannesburg">Johannesburg</option>
+                        <option value="Pretoria">Pretoria</option>
+                        <option value="Polokwane">Polokwane</option>
+                        <option value="Port Elizabeth">Port Elizabeth</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <div style="display: flex; gap: 15px; margin-top: 8px;">
+                        <label><input type="radio" name="gender" value="female" checked> Female</label>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+                                <div class="form-group">
+                    <label for="attachment">Attachment</label>
+                    <input type="file" id="attachment">
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" rows="5" placeholder="Tell us more..."></textarea>
+                </div>
+
+                <button class="cta-button" onclick="submitRegistration()">Submit Registration 💌</button>
+            </div>
+        </div>
+
+         <!-- Contact Info Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 style="margin-top: 60px;">Contact TECH-SISTERS</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>📧 Email</h3>
+                        <p><strong>General Inquiries:</strong><br>hello@tech-sisters.com</p>
+                        <p><strong>Partnerships:</strong><br>partners@tech-sisters.com</p>
+                        <p><strong>Support:</strong><br>support@tech-sisters.com</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>📱 Phone</h3>
+                        <p><strong>Main Office:</strong><br>+1 (555) 123-0307</p>
+                        <p><strong>Student Support:</strong><br>+1 (555) 456-2003</p>
+                        <p><strong>Business Hours:</strong><br>Mon-Fri: 9AM-6PM GMT+2</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>📍 Office</h3>
+                        <p><strong>Headquarters:</strong><br>
+                        18-12 Willow St, Flamewood<br>
+                        Klerksdorp 2571<br>
+                        North West</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>🌐 Social Media</h3>
+                        <p><strong>LinkedIn:</strong> /company/tech-sisters</p>
+                        <p><strong>Twitter:</strong> @TechSistersHQ</p>
+                        <p><strong>Instagram:</strong> @tech.sisters</p>
+                        <p><strong>YouTube:</strong> TECH-SISTERS Channel</p>
+                        <p>Follow us for daily robot cuteness!! 🌸</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.832766228936!2d26.698311874364418!3d-26.84527089038725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e96f160765d60ef%3A0x3dcbca6ef96c6680!2sMatlosana%20Gardens!5e0!3m2!1sen!2sza!4v1756315430942!5m2!1sen!2sza" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Feedback Form Section -->
+        <div class="google-form-section">
+            <h2 style="margin-bottom: 20px;">Feedback Form 💌</h2>
+            <!-- REPLACE THE SRC BELOW WITH YOUR ACTUAL GOOGLE FORM EMBED URL -->
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeSRrf4pz10ey_ZPYg8EZTtB1g17kLNs_qTsVBlFmHqtO8uuQ/viewform?embedded=true" width="640" height="758" frameborder="0" marginheight="0" marginwidth="0">Loading…
+            </iframe>
+        </div>
+
+        <!-- Message Form -->
+        <div style="margin-top: 60px;">
+            <h2>Send us a Message</h2>
+            <div class="form-container">
+                <div class="success-message" id="contactSuccess">
+                    Message sent successfully! We'll respond within 24 hours. 💖
+                </div>
+
+                <div class="form-group">
+                    <label for="contactName">Your Name *</label>
+                    <input type="text" id="contactName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Your Email *</label>
+                    <input type="email" id="contactEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject *</label>
+                    <input type="text" id="contactSubject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message *</label>
+                    <textarea id="contactMessage" rows="5" required placeholder="How can we help you?"></textarea>
+                </div>
+
+                <button class="cta-button" onclick="submitContact()">Send Message 💌</button>
+            </div>
+        </div>
+    </main>
+
+     <footer>
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy;2025 TECH-SISTERS. All rights reserved</p>
+    </footer>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Floating Hearts
+            const hearts = ['💕', '💖', '🌸', '💜', '💗', '🤖'];
+            const container = document.getElementById('floating-hearts');
+
+            function createHeart() {
+                const heart = document.createElement('div');
+                heart.className = 'floating-heart';
+                heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                heart.style.left = `${Math.random() * 100}vw`;
+                heart.style.animationDuration = `${15 + Math.random() * 10}s`;
+                heart.style.animationDelay = `${Math.random() * 5}s`;
+                heart.style.fontSize = `${20 + Math.random() * 15}px`;
+                heart.style.color = Math.random() > 0.5 ? '#ff1493' : '#9c27b0';
+                container.appendChild(heart);
+
+                setTimeout(() => {
+                    if (heart.parentNode) heart.remove();
+                }, 20000);
+            }
+
+                        for (let i = 0; i < 6; i++) setTimeout(createHeart, i * 800);
+            setInterval(createHeart, 2500);
+
+            // Mobile Menu
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Form Submission Handlers
+            window.submitRegistration = function() {
+                const name = document.getElementById('regName').value;
+                const email = document.getElementById('regEmail').value;
+                if (name && email) {
+                    document.getElementById('registrationSuccess').style.display = 'block';
+                    setTimeout(() => {
+                        document.getElementById('registrationSuccess').style.display = 'none';
+                    }, 5000);
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            };
+
+            window.submitContact = function() {
+                const name = document.getElementById('contactName').value;
+                const email = document.getElementById('contactEmail').value;
+                const subject = document.getElementById('contactSubject').value;
+                const message = document.getElementById('contactMessage').value;
+                if (name && email && subject && message) {
+                    document.getElementById('contactSuccess').style.display = 'block';
+                    setTimeout(() => {
+                        document.getElementById('contactSuccess').style.display = 'none';
+                    }, 5000);
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            };
+        });
+    </script>
+</body>
+</html>
+
+
+   
+
+

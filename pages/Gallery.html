@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> 
+    
+</head>
+<body>
+    <div id="floating-hearts"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <span class="logo-text">💕TECH-SISTERS🤖</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+        <!-- Gallery Section -->
+         
+        <div class="interactive-section" id="gallery">
+            <h2 class="section-title">Our Community in Action</h2>
+            <div class="gallery">
+                <div class="gallery-item" data-src="../assets/gallery-2.jpg">
+                    <img src="../assets/gallery-2.jpg" alt="Robotics Workshop">
+                    <div class="gallery-overlay">Robotics Workshop</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/gallery-1.jpg">
+                    <img src="../assets/gallery-1.jpg" alt="Hackathon Event">
+                    <div class="gallery-overlay">Hackathon Event</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/mentorship.jpg">
+                    <img src="../assets/mentorship.jpg" alt="Mentorship Session">
+                    <div class="gallery-overlay">Mentorship Session</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/DOCTORS Gradautes.jpg">
+                    <img src="../assets/DOCTORS Gradautes.jpg" alt="Graduation Ceremony">
+                    <div class="gallery-overlay">Graduation Ceremony</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/gallery-3.jpg">
+                    <img src="../assets/gallery-3.jpg" alt="Tech Conference">
+                    <div class="gallery-overlay">Tech Conference</div>
+                </div>
+                <div class="gallery-item" data-src="../assets/Community meetup.webp">
+                    <img src="../assets/Community meetup.webp" alt="Community Meetup">
+                    <div class="gallery-overlay">Community Meetup</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy;2025 TECH-SISTERS. All rights reserved</p>
+    </footer>
+
+    <script>
+        // Gallery Lightbox
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const closeLightbox = document.getElementById('closeLightbox');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.getAttribute('data-src');
+                lightboxImg.src = imgSrc;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close lightbox when clicking outside image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>    
+

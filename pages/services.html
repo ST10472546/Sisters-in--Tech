@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+   
+</head>
+<body>
+    <div id="floating-hearts"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <span class="logo-text">💕TECH-SISTERS🤖</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🎓 Tech Bootcamps</h3>
+                    <div class="price">R150</div>
+                    <ul>
+                        <li>12-week intensive coding program</li>
+                        <li>Full-stack web development</li>
+                        <li>AI & Machine Learning basics</li>
+                        <li>Career placement support</li>
+                        <li>Lifetime community access</li>
+                    </ul>
+                    <button class="cta-button" onclick="showPage('enquiry')">Enroll Now</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>💼 Mentorship Program</h3>
+                    <div class="price">R150/month</div>
+                    <ul>
+                        <li>1-on-1 mentorship sessions</li>
+                        <li>Industry expert guidance</li>
+                        <li>Career pathway planning</li>
+                        <li>Resume & interview prep</li>
+                        <li>Networking opportunities</li>
+                    </ul>
+                    <button class="cta-button" onclick="showPage('enquiry')">Get Mentor</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>🚀 Startup Incubator</h3>
+                    <div class="price">Equity-based</div>
+                    <ul>
+                        <li>6-month incubation program</li>
+                        <li>R500 seed funding</li>
+                        <li>Expert mentorship</li>
+                        <li>Legal & business support</li>
+                        <li>Demo day presentation</li>
+                    </ul>
+                    <button class="cta-button" onclick="showPage('enquiry')">Apply Now</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>📱 Custom Development</h3>
+                    <div class="price">From R1000</div>
+                    <ul>
+                        <li>Web & mobile app development</li>
+                        <li>AI-powered solutions</li>
+                        <li>Cloud infrastructure setup</li>
+                        <li>Ongoing maintenance</li>
+                        <li>Team augmentation</li>
+                    </ul>
+                    <button class="cta-button" onclick="showPage('enquiry')">Get Quote</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>📚 Online Courses</h3>
+                    <div class="price">R99 - R150</div>
+                    <ul>
+                        <li>Self-paced learning</li>
+                        <li>Python, JavaScript, Data Science</li>
+                        <li>Cybersecurity fundamentals</li>
+                        <li>Project-based learning</li>
+                        <li>Certificate of completion</li>
+                    </ul>
+                    <button class="cta-button" onclick="showPage('enquiry')">Browse Courses</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>🌟 Corporate Training</h3>
+                    <div class="price">Custom pricing</div>
+                    <ul>
+                        <li>On-site team training</li>
+                        <li>Diversity & inclusion workshops</li>
+                        <li>Leadership development</li>
+                        <li>Technical skills upgrade</li>
+                        <li>Ongoing support</li>
+                    </ul>
+                    <button class="cta-button" onclick="showPage('enquiry')">Book Training</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy;2025 TECH-SISTERS. All rights reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Floating Hearts Animation
+            const hearts = ['💕', '💖', '🌸', '💜', '💗', '🤖'];
+            const container = document.getElementById('floating-hearts');
+
+            function createHeart() {
+                const heart = document.createElement('div');
+                heart.className = 'floating-heart';
+                heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                heart.style.left = `${Math.random() * 100}vw`;
+                heart.style.animationDuration = `${15 + Math.random() * 10}s`;
+                heart.style.animationDelay = `${Math.random() * 5}s`;
+                heart.style.fontSize = `${20 + Math.random() * 15}px`;
+                heart.style.color = Math.random() > 0.5 ? '#ff1493' : '#9c27b0';
+                container.appendChild(heart);
+
+                setTimeout(() => {
+                    if (heart.parentNode) heart.remove();
+                }, 20000);
+            }
+
+            // Initial hearts
+            for (let i = 0; i < 6; i++) {
+                setTimeout(createHeart, i * 800);
+            }
+            // Continuous hearts
+            setInterval(createHeart, 2500);
+
+            // 2. Mobile Hamburger Menu
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // 3. Navigation Helper Function
+            window.showPage = function(pageName) {
+                window.location.href = pageName + '.html';
+            };
+        });
+    </script>
+</body>
+</html>
+
