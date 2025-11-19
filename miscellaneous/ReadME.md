@@ -17,12 +17,16 @@ Features
 
     -Responsiveness layout for desktop and mobile
 
+    -Hamberger menu
+
     -Pages Layout
       -Home
-      -About Us
-      -Our Services
+      -About 
+      -Services
       -Enquiry
+      -Gallery (new page)
       -Contacts
+      
 
     
 
@@ -37,15 +41,14 @@ TECH-SISTERS
 
 -PAGES
      -index.html   /*Home page*/
-     -about.html    /*About us page*/
-     -services.html  /*Our Services page*/
+     -about.html    /*About page*/
+     -services.html  /*Services page*/
      -enquiry.html   /*Enquiry page*/
-     -contact.html  /*Contact Us page*/
+     -Gallery.html   /*Gallery page*/ new page
+     -contact.html  /*Contact page*/
 
  CSS
  - styles.css           /*Main stylesheet*/
- -inline css styling
-
 
  Assets
    -Images  
@@ -80,20 +83,26 @@ CHANGELOG
 
     -Added homepage (index.html)
 
-    -Created, About Us,Enquiry,Services & Contact pages
+    -Created, About ,Enquiry,Services & Contact pages
 
     -Added navigation bar and footer
 
     -Added a map
+    -Added a hamburger
 
     
 
-v1.1.0 – Latest Update (2025-09-26)
+    
+
+v1.1.0 – Latest Update (2025-11-19)
+
+     -Added Gallery page (Gallery.html)
+     
     -Added css for decoration, layout, and typography
 
     -Improved mobile responsiveness
 
-    -Integrated Font Awesome icons,Emogis 
+    -Integrated Font Awesome icons,Emogis and Favicons 
 
     -Added responsive CSS styling
 
@@ -117,6 +126,44 @@ v1.1.0 – Latest Update (2025-09-26)
      -twitter
      -linkedin
 
+     Home page (Index.html)
+     
+     -Added a responive Google Feedback form on contact page(contact.html)
+     -Added a responsive Assistant Robot on home page (Index.html) 
+     -Added real time date and time display on home page(index.html)
+     -Added chat buttons and chat window on Assistant robot in home page (index.html)
+     - Added a search bar (index.html)
+     -Implemeted a search fature (index.html)
+     -Implemented a program section (index.html)
+     -Implemented FAQ section (index.html)
+     -Added "Our Communty in Action" section (index.html)
+     -Added "latest Update" version (index.html)
+     
+     
+
+     /*JAVASCRIPT*/
+
+     -Added SEO Meta tags on home page(index.html)
+     -Added Paragraph/Social Media meta tags on home page (index.html)
+     -Added Twitter Card meta tags on home page (index.html)
+     -Added (index.html)
+           -Tabs
+           -Accordions
+           -Gallery section
+           -Real time updates
+           -Lightbox
+           -Lightbox modal
+           -Contact modal
+           
+/*Updated features*/
+
+  - Welcoming robot
+  - Assistante robot for guidiance and navigation
+  - Time and Date
+  - Location
+  - FAQ
+  - Latest Updates
+           
 DEPENCIES
 
   -Google Fonts
@@ -124,6 +171,8 @@ DEPENCIES
 
   -Font-awesome
    -icons
+
+-Favicons
 
 REFERENCES
 
@@ -134,3 +183,14 @@ W3Schools. (2025, September 26). HTML Icons. Retrieved from W3Schools: https://w
 W3Schools. (2025, September 26). Font Awesome Icons. Retrieved from W3Schools: https://www.w3schools.com/icons/icons_fontawesome.asp
 
 Seduma MMP(2025 , September 26). MR (Majikijela Ezile, Lecture).
+
+
+Updated REFERNCES
+
+W3Schools. (2025, November 10). HTML Emojis. Retrieved from W3Schools: https://www.w3schools.com/html/html_emojis.asp
+
+W3Schools. (2025, November 10). HTML Icons. Retrieved from W3Schools: https://www.w3schools.com/html/html_icons.asp
+
+W3Schools. (2025, November 10). Font Awesome Icons. Retrieved from W3Schools: https://www.w3schools.com/icons/icons_fontawesome.asp
+
+Leactured by MR Majikijela Ezile
