@@ -96,6 +96,8 @@ CHANGELOG
 
 v1.1.0 – Latest Update (2025-11-19)
 
+      -Added screanshorts of the new updated website
+      
      -Added Gallery page (Gallery.html)
      
     -Added css for decoration, layout, and typography
